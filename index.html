@@ -1,264 +1,215 @@
-<!doctype html>
-<!--
-  Professional single-file portfolio for: Mohit Vishwakarma
-  - Fully responsive, accessible, and optimized for recruiter scan
-  - One-file (HTML + CSS + small JS). Replace placeholder links/images in comments.
-  Instructions:
-    1. Place your images (profile, projects, certificates) into a folder named `assets/` next to this file.
-    2. Update the links marked with TODO (LinkedIn, GitHub, CV, project URLs).
-    3. To publish, push this file and the `assets/` folder to a GitHub repo and enable Pages or upload to any static host.
--->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mohit Vishwakarma — Business Analyst | Data & Product Analytics</title>
-  <meta name="description" content="Mohit Vishwakarma — Business Analyst. Forecasting, churn prediction, pricing optimisation, Power BI & SQL. Portfolio showcasing projects, certifications and contact details." />
-  <meta name="author" content="Mohit Vishwakarma" />
-  <link rel="icon" href="assets/favicon-32.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Mohit Vishwakarma — Business Analyst" />
-  <meta property="og:description" content="Forecasting accuracy ↑12%. Identified ₹10–12L revenue opportunity. Power BI | SQL | Python." />
-  <meta property="og:image" content="assets/profile-og.png" />
+    <title>Mohit Vishwakarma | Business & Data Analyst Portfolio</title>
 
-  <style>
-    :root{--bg:#0f1724;--card:#ffffff;--muted:#6b7280;--accent:#2E9EF7;--glass:rgba(255,255,255,0.06)}
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#0b1220 0%,#071026 100%);color:#0b1220}
-    /* Reset content is white cards on dark background for contrast */
-    .wrap{max-width:1100px;margin:28px auto;padding:28px}
-    header.card{display:flex;gap:20px;align-items:center;background:var(--card);border-radius:12px;padding:22px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
-    .avatar{width:120px;height:120px;border-radius:12px;object-fit:cover;border:4px solid rgba(0,0,0,0.06)}
-    .hero{flex:1}
-    .hero h1{margin:0;font-family:'Playfair Display',serif;font-size:26px;color:#0b1220}
-    .hero .role{color:var(--muted);margin:6px 0}
-    .metrics{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
-    .metric{background:var(--glass);padding:10px 12px;border-radius:8px;color:var(--muted);font-weight:600}
-    .cta{display:flex;gap:10px;margin-top:14px}
-    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
-    .btn.secondary{background:transparent;border:2px solid rgba(46,158,247,0.12);color:var(--accent)}
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/favicon-32x32.png">
 
-    /* NAV */
-    nav{margin:16px 0;display:flex;justify-content:center}
-    nav ul{list-style:none;padding:0;margin:0;display:flex;gap:18px}
-    nav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
-    /* Sections */
-    section{background:var(--card);border-radius:12px;padding:20px;margin-bottom:18px;box-shadow:0 6px 20px rgba(2,6,23,0.45)}
-    h2{margin-top:0;font-family:'Playfair Display',serif}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    .about{display:flex;gap:18px;align-items:flex-start}
-    .about .bio{color:var(--muted);line-height:1.5}
-
-    /* Projects grid */
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-    .card-project{border-radius:10px;overflow:hidden;border:1px solid rgba(11,17,36,0.06);background:#fff}
-    .card-project img{width:100%;height:160px;object-fit:cover}
-    .card-project .pcontent{padding:12px}
-    .pcontent h3{margin:0 0 8px 0}
-    .pcontent p{margin:0 0 10px;color:var(--muted);font-size:14px}
-    .pcontent .links{display:flex;gap:8px}
-
-    /* Skills */
-    .skills{display:flex;gap:10px;flex-wrap:wrap}
-    .skill-pill{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:700}
-
-    /* Certificates gallery */
-    .certs{display:flex;gap:8px;flex-wrap:wrap}
-    .certs img{width:140px;height:90px;object-fit:cover;border-radius:6px;cursor:pointer;border:1px solid rgba(11,17,36,0.04)}
-
-    /* Contact form */
-    .form-grid{display:grid;grid-template-columns:1fr;gap:10px}
-    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e8eb;font-size:14px}
-    .submit{background:var(--accent);color:white;padding:10px;border-radius:8px;border:0;font-weight:700}
-
-    footer{color:var(--muted);text-align:center;font-size:13px}
-
-    /* Modal for certificate preview */
-    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.7);display:flex;align-items:center;justify-content:center;padding:20px;visibility:hidden;opacity:0;transition:opacity .18s}
-    .modal.open{visibility:visible;opacity:1}
-    .modal img{max-width:90%;max-height:90%;border-radius:8px}
-
-    /* Responsive tweaks */
-    @media (max-width:640px){.hero h1{font-size:20px}.avatar{width:96px;height:96px}}
-  </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="wrap">
 
-    <!-- HEADER / HERO -->
-    <header class="card" role="banner">
-      <img class="avatar" src="assets/profile.jpg" alt="Mohit Vishwakarma — Profile">
-      <div class="hero">
+<!-- HEADER -->
+<header>
+    <div class="container">
         <h1>Mohit Vishwakarma</h1>
-        <div class="role">Business Analyst • Predictive Analytics • CRM & Pricing Optimization</div>
-        <div class="about-text bio">
-          I translate messy data into business outcomes — forecasting accuracy +12%, churn reduction 9%, and
-          identified ₹10–12L revenue opportunities. MBA (Business Analytics) • Power BI · SQL · Python.
+        <p>Business Analyst | Data Analyst | Power BI & SQL</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/YOUR-GITHUB" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="assets/Mohit_Vishwakarma_CV.pdf" download title="Download CV">
+                <i class="fas fa-file-arrow-down"></i>
+            </a>
         </div>
+    </div>
+</header>
 
-        <div class="metrics" aria-hidden="true">
-          <div class="metric">Forecasting ↑12%</div>
-          <div class="metric">Churn ↓9%</div>
-          <div class="metric">30+ Certifications</div>
-        </div>
+<!-- NAVIGATION -->
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-        <div class="cta">
-          <a class="btn" href="https://www.linkedin.com/in/mohitvishwakarma" target="_blank">LinkedIn</a>
-          <a class="btn secondary" href="assets/Mohit_Vishwakarma_CV.pdf" download>Download CV</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- NAV -->
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certs">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About</h2>
-      <div class="about">
-        <div style="flex:1">
-          <p class="bio">I am an MBA (Business Analytics) candidate with hands-on experience delivering dashboards,
-          predictive models and pricing solutions. I work at the intersection of business and data — defining
-          measurable KPIs, building reproducible analytics, and presenting clear recommendations to stakeholders.</p>
-          <p style="margin-top:10px;color:var(--muted)">Current: MBA Business Analytics (Prestige Institute) • Location: Bhopal, India • Open to: Full-time / Remote</p>
-        </div>
-        <aside style="width:260px">
-          <div style="background:linear-gradient(180deg,#eef6ff,#ffffff);padding:12px;border-radius:10px">
-            <strong>Quick Wins</strong>
-            <ul style="margin:8px 0 0 16px;color:var(--muted)">
-              <li>Improved forecasting accuracy by 12%</li>
-              <li>Reduced churn by 9%</li>
-              <li>Automated 30% reporting workflows</li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="grid">
-
-        <article class="card-project" aria-labelledby="proj1">
-          <img src="assets/project-sales-dashboard.jpg" alt="Sales Forecasting Dashboard">
-          <div class="pcontent">
-            <h3 id="proj1">Predictive Sales Forecasting</h3>
-            <p>End-to-end forecasting pipeline (XGBoost, feature engineering) + Power BI scenario planner. Improved MAPE from 18% → 6%.</p>
-            <div class="links">
-              <a class="btn" href="https://github.com/mohitvishwakarma/sales-forecasting" target="_blank">Repo</a>
-              <a class="btn secondary" href="#">Live</a>
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="assets/images/profile.jpg" alt="Mohit Vishwakarma" class="profile-photo">
+            <div class="about-text">
+                <p>
+                    I am a Business Analyst with strong expertise in data-driven decision-making, dashboarding,
+                    and analytical storytelling. I specialize in translating raw data into clear business insights.
+                </p>
+                <p>
+                    My experience includes Power BI dashboards, SQL-based analysis, Excel automation,
+                    and end-to-end reporting solutions for business and operational use cases.
+                </p>
             </div>
-          </div>
-        </article>
+        </div>
+    </div>
+</section>
 
-        <article class="card-project" aria-labelledby="proj2">
-          <img src="assets/project-churn.jpg" alt="Churn Prediction">
-          <div class="pcontent">
-            <h3 id="proj2">Customer Churn Prediction</h3>
-            <p>Logistic regression + decision trees; 82% AUC. Delivered 4 actionable churn drivers and customer segmentation.</p>
-            <div class="links">
-              <a class="btn" href="https://github.com/mohitvishwakarma/churn-prediction" target="_blank">Repo</a>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="assets/images/project-sales-dashboard.jpg" alt="Sales Dashboard">
+                <div class="project-card-content">
+                    <h3>Sales Performance Dashboard</h3>
+                    <p>Interactive Power BI dashboard analyzing revenue, growth trends, and regional performance.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/YOUR-GITHUB/sales-dashboard" target="_blank" class="btn">
+                            Documentation
+                        </a>
+                        <a href="#" target="_blank" class="btn btn-secondary">
+                            View Dashboard
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
 
-        <article class="card-project" aria-labelledby="proj3">
-          <img src="assets/project-pricing.jpg" alt="Pricing Optimization">
-          <div class="pcontent">
-            <h3 id="proj3">Insurance Pricing Optimization</h3>
-            <p>Risk-adjusted pricing model projecting ₹10–12L revenue uplift while retaining ~92% of customers.</p>
-            <div class="links">
-              <a class="btn" href="https://github.com/mohitvishwakarma/pricing-optimization" target="_blank">Repo</a>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="assets/images/project-customer-analysis.jpg" alt="Customer Analysis">
+                <div class="project-card-content">
+                    <h3>Customer Segmentation Analysis</h3>
+                    <p>SQL and Excel-based customer segmentation to identify high-value and at-risk users.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/YOUR-GITHUB/customer-segmentation" target="_blank" class="btn">
+                            Documentation
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
 
-      </div>
-    </section>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="assets/images/project-fraud-detection.jpg" alt="Fraud Detection">
+                <div class="project-card-content">
+                    <h3>Fraud Detection Analysis</h3>
+                    <p>Exploratory data analysis and KPI tracking to identify suspicious transaction patterns.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/YOUR-GITHUB/fraud-detection" target="_blank" class="btn">
+                            Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Technical Skillset</h2>
-      <div class="skills">
-        <span class="skill-pill">SQL</span>
-        <span class="skill-pill">Power BI</span>
-        <span class="skill-pill">Python (pandas, scikit-learn)</span>
-        <span class="skill-pill">Tableau</span>
-        <span class="skill-pill">Excel (advanced)</span>
-        <span class="skill-pill">DAX</span>
-        <span class="skill-pill">Time-series forecasting</span>
-      </div>
-    </section>
+        </div>
+    </div>
+</section>
 
-    <!-- CERTIFICATIONS -->
-    <section id="certs">
-      <h2>Certifications & Job Simulations</h2>
-      <p style="color:var(--muted)">Click thumbnails to enlarge. Verification links available in resume.</p>
-      <div class="certs" id="cert-gallery">
-        <!-- Replace with your thumbnails in assets/certs/ -->
-        <img src="assets/certs/cert_1_thumb.jpg" alt="cert1" data-full="assets/certs/cert_1.jpg">
-        <img src="assets/certs/cert_2_thumb.jpg" alt="cert2" data-full="assets/certs/cert_2.jpg">
-        <img src="assets/certs/cert_3_thumb.jpg" alt="cert3" data-full="assets/certs/cert_3.jpg">
-        <img src="assets/certs/cert_4_thumb.jpg" alt="cert4" data-full="assets/certs/cert_4.jpg">
-        <img src="assets/certs/cert_5_thumb.jpg" alt="cert5" data-full="assets/certs/cert_5.jpg">
-      </div>
-    </section>
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-table">
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div style="display:grid;grid-template-columns:1fr 380px;gap:18px;align-items:start">
-        <form class="form-grid" action="https://formsubmit.co/YOUR-EMAIL@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Portfolio contact from website">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="text" name="subject" placeholder="Subject" required>
-          <textarea name="message" rows="6" placeholder="Message" required></textarea>
-          <button class="submit" type="submit">Send Message</button>
+            <div class="skill-column">
+                <div class="skill-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Visualization</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>Power BI</li>
+                    <li>Excel Dashboards</li>
+                    <li>Looker Studio</li>
+                </ul>
+            </div>
+
+            <div class="skill-column">
+                <div class="skill-header">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Analysis</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>SQL</li>
+                    <li>Advanced Excel</li>
+                    <li>Python (Pandas)</li>
+                </ul>
+            </div>
+
+            <div class="skill-column">
+                <div class="skill-header">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Business Skills</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>Requirement Gathering</li>
+                    <li>Stakeholder Communication</li>
+                    <li>KPI Design</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Me</h2>
+
+        <form action="https://formsubmit.co/YOUR-EMAIL@gmail.com" method="POST" class="contact-form">
+            <p>Feel free to reach out for opportunities, collaborations, or discussions.</p>
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
         </form>
+    </div>
+</section>
 
-        <aside style="background:linear-gradient(180deg,#fff,#fbfdff);padding:16px;border-radius:8px">
-          <p style="margin:0"><strong>Email</strong><br><a href="mailto:mohit.vishwakarma@email.com">mohit.vishwakarma@email.com</a></p>
-          <p style="margin-top:12px"><strong>Phone</strong><br>+91 82510 88214</p>
-          <p style="margin-top:12px;color:var(--muted)"><strong>Open to</strong><br>Full-time | Remote | Hybrid — Business Analyst / Data Analyst roles</p>
-        </aside>
-      </div>
-    </section>
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Mohit Vishwakarma. All rights reserved.</p>
+    </div>
+</footer>
 
-    <footer>
-      <p>&copy; 2026 Mohit Vishwakarma — Built for recruiters & hiring managers. • <a href="https://github.com/mohitvishwakarma" target="_blank">GitHub</a></p>
-    </footer>
+<script src="assets/js/main.js"></script>
 
-  </div>
-
-  <!-- Certificate modal -->
-  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <img id="modal-img" src="" alt="Certificate preview">
-  </div>
-
-  <script>
-    // Simple modal for certificate preview
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modal-img');
-    document.getElementById('cert-gallery').addEventListener('click', (e)=>{
-      const t = e.target; if(t.tagName !== 'IMG') return;
-      modalImg.src = t.dataset.full || t.src; modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
-    });
-    modal.addEventListener('click', ()=>{ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); modalImg.src='';});
-
-    // Smooth nav scroll
-    document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',(e)=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});}));
-  </script>
 </body>
 </html>
