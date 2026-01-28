@@ -1,61 +1,174 @@
-# [Your Name] - Data Analysis Portfolio
+Got it, Mohit. Below is a **fully professional, customized `README.md`** written **according to your real portfolio profile** (Business Analyst, MBA Analytics, AI/Data focus).
+You can **directly copy–paste** this into your GitHub repository README.
 
-Welcome! This repository contains the complete template for a professional, one-page data analysis portfolio website, hosted for free on GitHub Pages.
+---
 
-## About This Portfolio Template
+# Mohit Vishwakarma — Business Analytics & Data Science Portfolio
 
-This portfolio is designed to demonstrate skills in:
-- Data visualization and storytelling
-- Data modeling and analysis
-- Creating interactive, professional dashboards
-- Transforming complex data into actionable insights
+Welcome to my professional portfolio repository. This website showcases my work as a **Business Analyst** specializing in **data-driven strategy, predictive analytics, and executive dashboards**, with a strong focus on **measurable business impact**.
 
-## 🚀 Projects
+🔗 **Live Portfolio:** [https://mohitvishwakarma.github.io](https://mohitvishwakarma.github.io)
+🔗 **GitHub:** [https://github.com/mohitvishwakarma](https://github.com/mohitvishwakarma)
+🔗 **LinkedIn:** [https://linkedin.com/in/mohitvishwakarma](https://linkedin.com/in/mohitvishwakarma)
 
-This template is set up to showcase your best work. You can easily customize the project cards in the `index.html` file.
+---
 
-### Project Title One
-*A brief description of your project, the tools used, and the key insights derived.*
+## 👋 About Me
 
-### Project Title Two
-*A brief description of your project, the tools used, and the key insights derived.*
+I am an **MBA (Business Analytics)** candidate with hands-on experience across **analytics, finance, CRM optimization, and AI-driven decision systems**.
 
-### Project Title Three
-*A brief description of your project, the tools used, and the key insights derived.*
+I don’t just analyze data — I translate it into **clear business actions**.
+
+**Highlights:**
+
+* Improved forecasting accuracy by **12%**, enabling **₹18L inventory optimization**
+* Reduced customer churn by **9%** using predictive modeling (**₹5L+ impact**)
+* Identified **₹10–12L revenue opportunities** through pricing optimization
+* Automated reporting workflows saving **200+ hours annually**
+* Built **15+ executive dashboards** used by sales, marketing, and operations leaders
+
+📍 Bhopal, India
+🎓 MBA – Business Analytics (CGPA: 7.5/10)
+
+---
+
+## 🚀 Featured Projects
+
+This portfolio highlights end-to-end analytics projects with **clear business outcomes**.
+
+### 🔮 Predictive Sales Forecasting System
+
+**Tools:** Python, scikit-learn, XGBoost, Power BI
+
+* Improved forecast accuracy from **18% → 6% MAPE**
+* Enabled **₹18L inventory optimization**
+* Interactive scenario-based Power BI dashboard
+  🔗 Repository: [https://github.com/mohitvishwakarma/sales-forecasting](https://github.com/mohitvishwakarma/sales-forecasting)
+
+---
+
+### 📉 Customer Churn Prediction Engine
+
+**Tools:** Python, Logistic Regression, Decision Trees, Tableau
+
+* Achieved **82% AUC**
+* Identified **₹45L annual revenue at risk**
+* Delivered 4 actionable churn drivers using feature importance
+  🔗 Repository: [https://github.com/mohitvishwakarma/churn-prediction](https://github.com/mohitvishwakarma/churn-prediction)
+
+---
+
+### 🏪 Real Estate CRM Analytics Dashboard
+
+**Tools:** SQL, Python, Power BI, Excel
+
+* Identified **35% funnel bottleneck**
+* Projected **18% conversion improvement**
+* Automated weekly KPI reporting
+  🔗 Repository: [https://github.com/mohitvishwakarma/crm-analytics](https://github.com/mohitvishwakarma/crm-analytics)
+
+---
+
+### 💳 Insurance Pricing Optimization Model
+
+**Tools:** Python, Excel VBA, Statistical Modeling
+
+* Projected **₹10–12L revenue uplift**
+* Risk-adjusted dynamic pricing model
+* NPV & IRR-based scenario evaluation
+  🔗 Repository: [https://github.com/mohitvishwakarma/pricing-optimization](https://github.com/mohitvishwakarma/pricing-optimization)
+
+---
+
+## 🛠️ Technical Skillset
+
+### 📊 Data Analysis & BI
+
+* SQL (Joins, Subqueries, Optimization)
+* Python (Pandas, NumPy, scikit-learn)
+* Power BI (DAX, Data Modeling)
+* Tableau
+* Advanced Excel
+
+### 🤖 AI & Machine Learning
+
+* Regression & Classification Models
+* Random Forest, Decision Trees, K-Means
+* Time-Series Forecasting
+* Generative AI Fundamentals
+
+### 📈 Business Analytics
+
+* CRM & Funnel Analytics
+* Customer Segmentation
+* Pricing & Financial Modeling
+* KPI Framework Design
+* A/B Testing & Cohort Analysis
+
+### ☁️ Cloud & Tools
+
+* Google BigQuery (Basics)
+* Google Cloud Analytics
+* Git & GitHub
+* Power BI Service
+
+---
+
+## 🎓 Certifications & Credentials
+
+* **Certified Business Analysis Professional (CBAP)**
+* Google Cloud – Digital Transformation
+* Salesforce AI Associate
+* PwC Power BI Job Simulation
+* JPMorgan, Tata, PepsiCo Analytics Simulations
+* 30+ certifications across Analytics, AI & Business Strategy
+
+---
+
+## 💼 Professional Experience (Internships)
+
+* **Business Analytics Intern – UptoSkills**
+  → 10% ROI improvement using Power BI dashboards
+
+* **Data Science Intern – Zidio Development**
+  → Churn model protecting **₹12L+ revenue**
+
+* **Marketing & Finance Intern – Agile Capital Services**
+  → Pricing model identifying **₹10–12L opportunity**
+
+* **Business Analytics Intern – Cognifyz Technologies**
+  → Improved data quality from **73% → 91%**
+
+---
+
+## 🌐 How This Portfolio Is Built
+
+* HTML5 + CSS3 (Clean, recruiter-friendly UI)
+* Hosted on **GitHub Pages (Free)**
+* Fully responsive, one-page layout
+* Focused on **business impact**, not just tools
+
+---
+
+## 📬 Contact
+
+I’m actively seeking **Business Analyst / Data Analyst** roles.
+
+* 📧 Email: [mohit.vishwakarma@email.com](mailto:mohit.vishwakarma@email.com)
+* 🔗 LinkedIn: [https://linkedin.com/in/mohitvishwakarma](https://linkedin.com/in/mohitvishwakarma)
+* 💻 GitHub: [https://github.com/mohitvishwakarma](https://github.com/mohitvishwakarma)
+
+---
+
+> **“Data tells stories. Analytics drives decisions. Impact measures success.”**
+> — *Mohit Vishwakarma*
+
+---
+
+### ⭐ If you find my work useful, please consider starring the repository.
+
+---
 
 
-## 🛠️ Skills
 
-Update the `index.html` file to reflect your personal technical skillset. The template is organized into key categories:
-
-- **Data Visualization**: Power BI, Tableau, Matplotlib, etc.
-- **Data Analysis**: SQL, Python (Pandas), R, Excel, etc.
-- **Data Modeling**: Power Query, DAX, Star Schema Design, etc.
-- **Tools**: List any other relevant tools like Power BI Service, specific cloud platforms, etc.
-
-## 💡 How to Use This Template
-
-Creating your own portfolio from this template is a simple, four-step process.
-
-### 1. Create a New Repository from this Template
-Click the green **"Use this template"** button at the top of this repository page, then select **"Create a new repository"**.
-
-### 2. Name Your Repository for GitHub Pages
-This is the most important step. To turn your portfolio into a live website, you **must** name your new repository in the following format:
-`your-username.github.io`
-*(Replace `your-username` with your actual GitHub username.)*
-
-### 3. Customize Your Portfolio
-Open the `index.html` file and begin personalizing it. The file contains helpful `<!--💡UPDATE: ... -->` comments to guide you on where to change:
-- Your name and title
-- Social media links
-- The "About Me" section
-- Your project titles, descriptions, and links
-- Your list of skills
-
-### 4. Add Your Files
-- Upload your profile photo and project preview images to the `assets/images/` folder.
-- Upload your CV (e.g., in PDF format) to the `assets/` folder.
-- Create your favicon and add it to the root folder.
-
-Once you commit your changes, your new portfolio website will be live at `https://your-username.github.io` within a few minutes!
+Just tell me what you want next.
